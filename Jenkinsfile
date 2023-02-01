@@ -23,7 +23,7 @@ pipeline {
                  docker stop npm
                  docker rm npm
                  docker rmi ksbhull/npm:latest
-                docker run -d -p 80:5500 --name npm ksbhull/npm:latest
+                docker run -d -p 9090:9090 --name npm ksbhull/npm:latest
                 '''
             }
         }
