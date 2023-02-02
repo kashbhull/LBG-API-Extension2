@@ -19,7 +19,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh '''
-                ssh -i "~/.ssh/id_rsa" jenkins@34.172.232.93 << EOF
+                ssh -i "~/.ssh/id_rsa" jenkins@104.197.233.99 << EOF
                  docker stop npm
                  docker rm npm
                  docker rmi ksbhull/npm:latest
